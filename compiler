@@ -1,0 +1,55 @@
+#
+# Sark Douls 0.5
+# Esoteric programming language by two idiots 
+# Interpreter made in Python (compatible with versions 2 and 3)
+# Inspired by poop, by Eike Tim Jesinghaus, 2014
+#
+
+dark_signs = {}
+for i in range(0, 10):
+    dark_signs[i] = str(i)
+    
+for num, char in enumerate("abcdefghijklmnopqrstuvwxyz.,-!?+*<>#@$€§%&/()[]"):
+    dark_signs[num+10] = char
+
+try:
+    compatible_input = raw_input
+except:
+    compatible_input = input
+
+execute_file = compatible_input("File to DEXecute: ")
+
+a = ""
+for line in open(execute_file, 'r').readlines():
+    for char in line:
+        if char != "\n":
+            a = a + char
+        else:
+            a = a + " "
+code = a.split(" ")
+print("\n")
+
+n = 0
+s = ""
+for cmd in code:
+    if cmd == "str":
+        n += 1
+    elif cmd == "dex":
+        n -= 1
+    elif cmd == "praise":
+        s = s + earth_signs[n]
+    elif cmd == "PRAISE":
+        try:
+            s = s + earth_signs[n].upper()
+        except:
+            s = s + earth_signs[n]
+    elif cmd == "die":
+        s = ""
+        n = 0
+    elif cmd == "lit":
+        print(s)
+
+
+print("\n\nDone.")
+compatible_input()
+exit(0)
