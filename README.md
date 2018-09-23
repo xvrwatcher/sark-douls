@@ -18,3 +18,9 @@ light   |  	Show the string
 die     |    Empty the string and set pointer to 0
 
 Hopefully it works.
+
+
+
+The list of characters is as follows:
+
+abcdefghijklmnopqrstuvwxyz.,-!?+*<>#@$€§%&/()[]
