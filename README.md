@@ -5,16 +5,16 @@ The language is based on a pointer moving along a list of characters, and then p
 
 There are only six commands in Sark Douls;
 
-str        	Move the pointer to the right
+str     |   	Move the pointer to the right
 
-dex	        Move the pointer to the left
+dex	    |    Move the pointer to the left
 
-praise    	Add pointed character to the string
+praise  |  	Add pointed character to the string
 
-PRAISE    	Add pointed character to the string uppercased
+PRAISE  |  	Add pointed character to the string uppercased
 
-light     	Show the string
+light   |  	Show the string
 
-die         Empty the string and set pointer to 0
+die     |    Empty the string and set pointer to 0
 
 Hopefully it works.
