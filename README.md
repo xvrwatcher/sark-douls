@@ -9,7 +9,7 @@ str        	Move the pointer to the right
 dex	        Move the pointer to the left
 praise    	Add pointed character to the string
 PRAISE    	Add pointed character to the string uppercased
-sniff     	Show the string
-lit	        Empty the string and set pointer to 0
+light     	Show the string
+die         Empty the string and set pointer to 0
 
 Hopefully it works.
