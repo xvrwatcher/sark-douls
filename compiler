@@ -43,10 +43,10 @@ for cmd in code:
             s = s + earth_signs[n].upper()
         except:
             s = s + earth_signs[n]
-    elif cmd == "die":
+    elif cmd == "light":
         s = ""
         n = 0
-    elif cmd == "lit":
+    elif cmd == "die":
         print(s)
 
 
